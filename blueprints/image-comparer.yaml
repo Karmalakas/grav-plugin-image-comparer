@@ -1,0 +1,73 @@
+title: Image comparer
+extends@:
+  type: default
+  context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        image_comparer:
+          type: tab
+          title: PLUGIN_IMAGE_COMPARER.TITLE
+          ordering@: content
+
+          fields:
+
+            header.image_comparers:
+              type: list
+              label: PLUGIN_IMAGE_COMPARER.COMPARERS.LABEL
+              collapsed: false
+              controls: both
+              placement: position
+
+              fields:
+
+                .before:
+                  type: fieldset
+                  title: PLUGIN_IMAGE_COMPARER.COMPARERS.BEFORE.LABEL
+
+                  fields:
+
+                    .text:
+                      type: text
+                      label: PLUGIN_IMAGE_COMPARER.COMPARERS.TEXT
+
+                    .image:
+                      type: filepicker
+                      preview_images: true
+                      label: PLUGIN_IMAGE_COMPARER.COMPARERS.IMAGE
+                      on_demand: true
+
+                .middle:
+                  type: fieldset
+                  title: PLUGIN_IMAGE_COMPARER.COMPARERS.MIDDLE.LABEL
+                  info: PLUGIN_IMAGE_COMPARER.COMPARERS.MIDDLE.DESCRIPTION
+
+                  fields:
+
+                    .text:
+                      type: text
+                      label: PLUGIN_IMAGE_COMPARER.COMPARERS.TEXT
+
+                    .image:
+                      type: filepicker
+                      preview_images: true
+                      label: PLUGIN_IMAGE_COMPARER.COMPARERS.IMAGE
+                      on_demand: true
+
+                .after:
+                  type: fieldset
+                  title: PLUGIN_IMAGE_COMPARER.COMPARERS.AFTER.LABEL
+
+                  fields:
+
+                    .text:
+                      type: text
+                      label: PLUGIN_IMAGE_COMPARER.COMPARERS.TEXT
+
+                    .image:
+                      type: filepicker
+                      preview_images: true
+                      label: PLUGIN_IMAGE_COMPARER.COMPARERS.IMAGE
+                      on_demand: true

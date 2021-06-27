@@ -1,0 +1,28 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <h1>{{ page.title|e }}</h1>
+
+    {% block image_comparers_wrapper %}
+        {% if page.header.image_comparers|length %}
+            <section>
+                {% block image_comparers %}
+                    {% set item_id = 'image-comparer-' ~ random() %}
+                    {{ image_comparer('#' ~ item_id ~ '>div')|raw }}
+
+                    <div id="{{ item_id }}" class="comparers-holder">
+                        {% for comparer in page.header.image_comparers %}
+                            {% include 'partials/image-comparer/comparer.html.twig' %}
+                        {% endfor %}
+                    </div>
+                {% endblock %}
+            </section>
+        {% endif %}
+    {% endblock %}
+
+    {% block page_content %}
+        <section>
+            {{ page.content|raw }}
+        </section>
+    {% endblock %}
+{% endblock %}

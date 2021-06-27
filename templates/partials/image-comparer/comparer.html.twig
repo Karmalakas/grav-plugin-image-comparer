@@ -1,0 +1,24 @@
+{% if comparer.before.image and comparer.after.image %}
+    <div class="comparer-wrapper">
+        <div class="comparer">
+            <div class="slide-holder before">
+                <img src="{{ page.media.images[comparer.before.image].url() }}" draggable="false" alt="Before"/>
+                <div class="caption">{{ comparer.before.text }}</div>
+            </div>
+            {% if comparer.middle.image %}
+                <div class="slide-holder middle">
+                    <img src="{{ page.media.images[comparer.middle.image].url() }}" draggable="false" alt="Middle"/>
+                    <div class="caption">{{ comparer.middle.text }}</div>
+                </div>
+            {% endif %}
+            <div class="slide-holder after">
+                <img src="{{ page.media.images[comparer.after.image].url() }}" draggable="false" alt="After"/>
+                <div class="caption">{{ comparer.after.text }}</div>
+            </div>
+            <div class="scroller scroller-before" data-active-label="before"></div>
+            {% if comparer.middle.image %}
+                <div class="scroller scroller-after" data-active-label="after"></div>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}

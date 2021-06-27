@@ -1,0 +1,45 @@
+en:
+  PLUGIN_IMAGE_COMPARER:
+    TITLE: 'Image Comparer'
+
+    USE_BUILT_IN_CSS: 'Use built in CSS'
+    USE_BUILT_IN_JS: 'Use built in JS'
+
+    COMPARERS:
+      LABEL: 'Comparers list'
+
+      BEFORE:
+        LABEL: 'Before'
+
+      MIDDLE:
+        LABEL: 'Middle'
+        DESCRIPTION: 'Leave two text and image fields in here empty for only two image (before-after) comparison'
+
+      AFTER:
+        LABEL: 'After'
+
+      TEXT: 'Text'
+      IMAGE: 'Image'
+
+lt:
+  PLUGIN_IMAGE_COMPARER:
+    TITLE: 'Paveikslėlių palyginimas'
+
+    USE_BUILT_IN_CSS: 'Naudoti įskiepio CSS'
+    USE_BUILT_IN_JS: 'Naudoti įskiepio JS'
+
+    COMPARERS:
+      LABEL: 'Palygynimų sąrašas'
+
+      BEFORE:
+        LABEL: 'Prieš'
+
+      MIDDLE:
+        LABEL: 'Tarpe'
+        DESCRIPTION: 'Palikite čia esančius teksto ir paveikslėlio laukus tuščius, jei norite tik dviejų (prieš-po) paveikslėlių palyginimo'
+
+      AFTER:
+        LABEL: 'Po'
+
+      TEXT: 'Tekstas'
+      IMAGE: 'Paveikslėlis'
