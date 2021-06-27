@@ -1,6 +1,8 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
+    <h1>{{ page.title|e }}</h1>
+
     {% block image_comparers_wrapper %}
         {% if page.header.image_comparers|length %}
             <section>
