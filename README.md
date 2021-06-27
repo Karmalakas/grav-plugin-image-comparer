@@ -91,7 +91,7 @@ You should now have all the plugin files under
 	
 > NOTE: This plugin is a modular component for Grav which may require other plugins to operate, please see its [blueprints.yaml-file on GitHub](https://github.com/karmalakas/grav-plugin-image-comparer/blob/master/blueprints.yaml).
 
-### Admin Plugin````
+### Admin Plugin
 
 If you use the Admin Plugin, you can install the plugin directly by browsing the `Plugins`-menu and clicking on the `Add` button.
 
