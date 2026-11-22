@@ -1,4 +1,5 @@
 <?php
+
 namespace Grav\Plugin;
 
 use Composer\Autoload\ClassLoader;
@@ -40,21 +41,21 @@ class ImageComparerPlugin extends Plugin
      */
     public function onPluginsInitialized(): void
     {
-        if ($this->isAdmin()) {
-            $this->enable(
-                [
-                    'onGetPageTemplates'  => ['onGetPageTemplates', 0],
-                    'onGetPageBlueprints' => ['onGetPageBlueprints', 0],
-                ]
-            );
+        $this->enable(
+            [
+                'onGetPageTemplates' => ['onGetPageTemplates', 0],
+                'onGetPageBlueprints' => ['onGetPageBlueprints', 0],
+            ]
+        );
 
+        if ($this->isAdmin()) {
             return;
         }
 
         $this->enable(
             [
                 'onTwigTemplatePaths' => ['onTwigTemplatePaths', 0],
-                'onTwigExtensions'    => ['onTwigExtensions', 0],
+                'onTwigExtensions' => ['onTwigExtensions', 0],
             ]
         );
     }
